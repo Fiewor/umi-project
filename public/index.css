@@ -45,6 +45,13 @@ p {
   color: #c0c5aa;
 }
 
+.user-header a button {
+  background-color: #084645;
+  outline: none;
+  border: none;
+  padding: ;
+}
+
 @media screen and (max-width: 500px) {
   .card {
     width: 100%;
