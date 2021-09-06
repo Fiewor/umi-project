@@ -1,10 +1,14 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 const UserPage = () => {
     return (
-        <div>
-            Hi I am User
-        </div>
+        <Link to="/user">
+            <div className="card">
+            <p className="name">Leanne Graham</p>
+            <p className="email">Sincere@april.biz</p>
+            </div>
+        </Link>
     )
 }
 

@@ -1,5 +1,6 @@
 import React from "react"
-import Users from "./Users"
+import UsersPage from "../../src/pages/UsersPage"
+import UserPage from "../../src/pages/UserPage"
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,8 +9,6 @@ import {
   Link
 } from "react-router-dom"
 
-import UserPage from "./User"
-
 function App() {
   return (
     <Router>
@@ -17,7 +16,7 @@ function App() {
         <header className="App-header">Umi React Assignment</header>
         {
           <Switch>
-            <Route exact path="/" component={Users}/>
+            <Route exact path="/" component={UsersPage}/>
             <Route path="/user" component={UserPage}/>
             <Redirect to="/" />
           </Switch>
